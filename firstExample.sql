@@ -2,7 +2,7 @@ create database firstExample;
 use firstExample;
 create table periodicos(
 	id int auto_increment primary key,
-    nome_periodico varchar(20),
+    nome_periodico varchar(60),
     issn int unique,
     id_editora int
 );
@@ -24,6 +24,14 @@ pais varchar(5),
  
  select * from editora;
  
- insert into editora (nome_editora, pais) values ('IEEE_EU', 'EU');
+ insert into editora (
+ nome_editora, pais) 
+ values ('IEEE_EU', 'EU');
+ 
+ select * from periodicos;
+ 
+ insert into periodicos(
+ nome_periodico, issn, id_editora)
+ values ('Special Issue','156795164','1');
  
  
