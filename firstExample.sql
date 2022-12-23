@@ -18,4 +18,12 @@ pais varchar(5),
  
  alter table periodicos add constraint fk_editora_periodico foreign key(id_editora) REFERENCES editora(id);
  
+ insert into editora (nome_editora, pais) 
+ values ('IEEE', 'EUA'), 
+ ('DataScienceMagazine', 'EUA');
+ 
+ select * from editora;
+ 
+ insert into editora (nome_editora, pais) values ('IEEE_EU', 'EU');
+ 
  
